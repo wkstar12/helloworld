@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div id="page1" data-role="page">
+            <div id="Header" data-role="header" data-theme="b">
+                <h3 id="Heading">
+                    Test Application
+                </h3>
+            </div>
+            <div data-role="content">
+                <a href="#page1" data-role="button" data-theme="b">
+                    Please Push
+                </a>
+                <div data-role="collapsible-set" data-theme="b">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Collapse One
+                        </h3>
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <label for="textarea1">
+                                    Title
+                                </label>
+                                <textarea id="textarea1" placeholder="">
+                                    This is text for Collapse one
+                                </textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Collapse Two
+                        </h3>
+                    </div>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="toggleswitch1">
+                            Sex
+                        </label>
+                        <select id="toggleswitch1" name="toggleswitch1" data-role="slider" data-theme="b">
+                            <option value="off">
+                                Male
+                            </option>
+                            <option value="on">
+                                Female
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
